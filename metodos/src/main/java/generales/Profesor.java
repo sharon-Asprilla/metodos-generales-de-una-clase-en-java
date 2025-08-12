@@ -30,6 +30,8 @@ public class Profesor {
         this.horassemanales = 0;
         this.tiempocompleto = false;
     }
+
+    
     public String getNombre() {
         return nombre;
     }
@@ -64,5 +66,17 @@ public class Profesor {
         this.tiempocompleto = tiempocompleto;
     }
 
+    
+    
+
+    public void mostrarInformacion() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Cédula: " + cedula);
+        System.out.println("Salario mensual: " + salario);
+        System.out.println("Horas semanales: " + horassemanales);
+        System.out.println("¿Tiempo completo?: " + tiempocompleto);
+    }
+
 
 }
+

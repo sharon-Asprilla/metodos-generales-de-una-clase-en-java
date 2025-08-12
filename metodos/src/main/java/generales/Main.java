@@ -2,13 +2,17 @@ package generales;
 
 public class Main {
     public static void main(String[] args) {
-       Profesor profesor = new Profesor("Ana", "12345", 2500.0, 40, true);
+        Profesor profesor = new Profesor("rosa", "328954671", 2500.0, 30, true);
 
-        // Imprimir los atributos del profesor
-        System.out.println("Nombre: " + profesor.getNombre());
-        System.out.println("Cédula: " + profesor.getCedula());
-        System.out.println("Salario: " + profesor.getSalario());
-        System.out.println("Horas semanales: " + profesor.getHorassemanales());
-        System.out.println("¿Tiempo completo?: " + profesor.getTiempocompleto());
+        System.out.println("_____________información del profesor_____________");
+        profesor.mostrarInformacion();
+
+        System.out.println("_____________calculo de salario mensual_____________");
+        double salarioMensual = profesor.getSalario();
+        System.out.println("Salario mensual: " + salarioMensual);
+
+        System.out.println("_____________información del curso_____________");
+        Curso curso = new Curso("Matemáticas");
+        curso.asignarProfesor(profesor);
     }
-    }
+}
